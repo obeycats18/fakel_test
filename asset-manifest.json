@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fakel_test/static/css/main.d498bfb3.chunk.css",
+    "main.js": "/fakel_test/static/js/main.65a4fb99.chunk.js",
+    "main.js.map": "/fakel_test/static/js/main.65a4fb99.chunk.js.map",
+    "runtime-main.js": "/fakel_test/static/js/runtime-main.1109dbe9.js",
+    "runtime-main.js.map": "/fakel_test/static/js/runtime-main.1109dbe9.js.map",
+    "static/js/2.b3d089d5.chunk.js": "/fakel_test/static/js/2.b3d089d5.chunk.js",
+    "static/js/2.b3d089d5.chunk.js.map": "/fakel_test/static/js/2.b3d089d5.chunk.js.map",
+    "index.html": "/fakel_test/index.html",
+    "precache-manifest.dc1bdd06ac61537c0ab08979d03687cc.js": "/fakel_test/precache-manifest.dc1bdd06ac61537c0ab08979d03687cc.js",
+    "service-worker.js": "/fakel_test/service-worker.js",
+    "static/css/main.d498bfb3.chunk.css.map": "/fakel_test/static/css/main.d498bfb3.chunk.css.map",
+    "static/js/2.b3d089d5.chunk.js.LICENSE.txt": "/fakel_test/static/js/2.b3d089d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1109dbe9.js",
+    "static/js/2.b3d089d5.chunk.js",
+    "static/css/main.d498bfb3.chunk.css",
+    "static/js/main.65a4fb99.chunk.js"
+  ]
+}
