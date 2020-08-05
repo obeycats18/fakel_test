@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/fakel_test/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/fakel_test/static/js/main.65a4fb99.chunk.js",
-    "main.js.map": "/fakel_test/static/js/main.65a4fb99.chunk.js.map",
+    "main.js": "/fakel_test/static/js/main.c5459041.chunk.js",
+    "main.js.map": "/fakel_test/static/js/main.c5459041.chunk.js.map",
     "runtime-main.js": "/fakel_test/static/js/runtime-main.1109dbe9.js",
     "runtime-main.js.map": "/fakel_test/static/js/runtime-main.1109dbe9.js.map",
-    "static/js/2.b3d089d5.chunk.js": "/fakel_test/static/js/2.b3d089d5.chunk.js",
-    "static/js/2.b3d089d5.chunk.js.map": "/fakel_test/static/js/2.b3d089d5.chunk.js.map",
+    "static/js/2.06517399.chunk.js": "/fakel_test/static/js/2.06517399.chunk.js",
+    "static/js/2.06517399.chunk.js.map": "/fakel_test/static/js/2.06517399.chunk.js.map",
     "index.html": "/fakel_test/index.html",
-    "precache-manifest.adfe0a1333d7b3a65518323699dba636.js": "/fakel_test/precache-manifest.adfe0a1333d7b3a65518323699dba636.js",
+    "precache-manifest.42d8475697d26ec37b498785356b795c.js": "/fakel_test/precache-manifest.42d8475697d26ec37b498785356b795c.js",
     "service-worker.js": "/fakel_test/service-worker.js",
     "static/css/main.d498bfb3.chunk.css.map": "/fakel_test/static/css/main.d498bfb3.chunk.css.map",
-    "static/js/2.b3d089d5.chunk.js.LICENSE.txt": "/fakel_test/static/js/2.b3d089d5.chunk.js.LICENSE.txt"
+    "static/js/2.06517399.chunk.js.LICENSE.txt": "/fakel_test/static/js/2.06517399.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1109dbe9.js",
-    "static/js/2.b3d089d5.chunk.js",
+    "static/js/2.06517399.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.65a4fb99.chunk.js"
+    "static/js/main.c5459041.chunk.js"
   ]
 }
