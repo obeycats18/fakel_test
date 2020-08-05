@@ -37,14 +37,31 @@ const sortColumn = (columnName: string) => (dispatch: Dispatch<DataActionsT>, ge
     const {data} = getState().data
     
     const _sortedData = data.sort( (a:any, b:any) => {
+
+        if((a[columnName] instanceof Object) && (b[columnName] instanceof Object)){
+            if(a[columnName].city < b[columnName].city) return -1
+            if(a[columnName].city > b[columnName].city) return 1
+            return 0
+        }
+
         if(a[columnName] < b[columnName]) return -1
         if(a[columnName] > b[columnName]) return 1
         return 0
     } )
 
-    console.log(_sortedData)
-
     dispatch(getDataAction(_sortedData))
 }
 
-export default {getDataThunk, filterTable, sortColumn}
+const getDataFromPage = (currentPage: number, pageLimit: number) => (dispatch: Dispatch<DataActionsT>, getState: () => GlobaleStore) => {
+    if(currentPage && pageLimit) {
+        const {tempData} = getState().data
+        if(tempData) {
+            let partData = [...tempData]
+            partData = partData.splice((currentPage - 1) + ((currentPage === 1) ? 0 : pageLimit), pageLimit)
+
+            dispatch(getDataAction(partData))
+        }
+    }
+}
+
+export default {getDataThunk, filterTable, sortColumn, getDataFromPage}

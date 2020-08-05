@@ -11,7 +11,8 @@ import dataThunks from '../../redux/thunks/dataTableThunks'
 const {sortColumn} = dataThunks
 
 type _TablePropsT = {
-    data: (DataTab1 | DataTab2)[]
+    data: (DataTab1 | DataTab2)[],
+    withPagination?: boolean
 }
 
 const _capitalizeTitle = (title: string) => {
@@ -65,7 +66,7 @@ const _renderTableBody = (data: (DataTab1 | DataTab2)[], maxRow: number, clicked
 
 
 
-const Table: React.FC<_TablePropsT> = ({data}) => {
+const Table: React.FC<_TablePropsT> = ({data, withPagination = false}) => {
 
     const [maxRow, setMaxRow] = useState<number>(8)
     const [clickedId, setClickedId] = useState<number>(-1)
@@ -113,13 +114,15 @@ const Table: React.FC<_TablePropsT> = ({data}) => {
     // Вешаем событие скрола на таблицу и удаляем слушатель, когда компонент был демонтирован
     useEffect( () => {
         const {current} = tableRef
-        current?.addEventListener('scroll', _onScroll)
+        if(!withPagination) {
+            current?.addEventListener('scroll', _onScroll)
+        }
 
         return () => current?.removeEventListener('scroll', _onScroll)
     }, [onscroll])
 
     return (
-        <table ref={tableRef} className="table mt-3" style={{display: 'block', maxHeight: '90vh', overflowY: 'auto'}}>
+        <table ref={tableRef} className="table mt-3" style={{display: 'block', maxHeight: '80vh', overflowY: 'auto'}}>
             <thead className='thead-dark'>
                 <tr>
                     {_renderTableHead((data && data.length) ? data[0]: {}, _thClick)}

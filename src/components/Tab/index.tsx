@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent} from 'react'
+import React from 'react'
 
 import classnames from 'classnames'
 import { TabT } from '../../@types/tabs.types'
